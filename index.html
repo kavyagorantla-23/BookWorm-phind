@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ddd;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .book {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 600px) {
+            .book-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BookWorm</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign Up</a>
+    </nav>
+    <div class="book-container">
+        <!-- Example book -->
+        <div class="book">
+            <img src="book-cover.jpg" alt="Book Cover">
+            <h2>Book Title</h2>
+            <p>Author Name</p>
+            <p>Brief Description</p>
+            <button>More Details</button>
+            <button>Add to Cart</button>
+            <button>Purchase</button>
+        </div>
+        <!-- Repeat for more books -->
+    </div>
+    <footer>
+        <p>&copy; 2023 BookWorm. All rights reserved.</p>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+    </footer>
+    <script>
+        // JavaScript for dynamic content goes here
+    </script>
+</body>
+</html>
